@@ -2,7 +2,7 @@ package StephenGrider;
 
 import java.util.ArrayList;
 
-public class SG_15_Create_Queue {
+public class SG_16_Peek_Queue {
     // --- Description
     // Create a queue data structure.  The queue
     // should be a class with methods 'add' and 'remove'.
@@ -28,7 +28,7 @@ public class SG_15_Create_Queue {
 
     private ArrayList<Integer> inner;
 
-    public SG_15_Create_Queue(){
+    public SG_16_Peek_Queue(){
         inner = new ArrayList<>();
     }
 
@@ -44,5 +44,4 @@ public class SG_15_Create_Queue {
     public int peek(){
         return inner.get(inner.size()-1);
     }
-
 }

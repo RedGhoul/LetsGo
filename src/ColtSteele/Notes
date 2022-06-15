@@ -1,0 +1,59 @@
+Big O Notation
+Double for loop means O(n^2) quadratic
+Single loop means O(n) linear
+A single variable assignment, array index lookup,
+or hashmap look up, is constant time O(1)
+If you have two for loops directly after each other
+you know its just O(n) + O(n) = 2*O(n)
+Since we get rid of constants we can say it
+just simplifies down to O(n)
+
+O(n)
+function logAtMost10(n) {
+    for (var i = 1; i <= Math.min(n, 10); i++) {
+        console.log(i);
+    }
+}
+O(n^2)
+function subtotals(array) {
+    var subtotalArray = Array(array.length);
+    for (var i = 0; i < array.length; i++) {
+        var subtotal = 0;
+        for (var j = 0; j <= i; j++) {
+            subtotal += array[j];
+        }
+        subtotalArray[i] = subtotal;
+    }
+    return subtotalArray;
+}
+
+
+Rule of thumb:
+Constants don't matter
+Smaller terms don't matter
+The bigger term is the only thing
+that matters
+
+Logarithmic Complexity:
+Is the next best thing to constant complexity
+
+Palindrome - a sequence of characters that is the
+same backwards and forwards
+
+Anagram - a word or phrase that is formed
+by rearranging another word or phrase
+Example - FRIED = FIRED
+
+Problem Solving Patterns
+
+Frequency Counters:
+Involve look up style data structures like
+HashMaps & Arrays.
+Help get rid of nested for loops
+
+Multiple Pointer:
+Its exactly what you think it is.
+Multiple pointers going through some
+sort of iterable data structure
+
+

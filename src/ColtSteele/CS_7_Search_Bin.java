@@ -21,6 +21,7 @@ public class CS_7_Search_Bin {
         int start = 0;
         int end = array.length-1;
         while((end - start) > 0){
+            // mid can also just be (int)Math.floor((end+start)/2);
             int mid = start + ((end-start)/2) + 1;
             int midVal = array[mid];
             if(target > midVal){

@@ -56,4 +56,27 @@ Its exactly what you think it is.
 Multiple pointers going through some
 sort of iterable data structure
 
+Helper method recursion is when you don't do all the work in
+a single function. You end up having two functions.
+The first function is there to set stuff up, and collect the data
+The second function is there to do the actual work and heavy lifting
+Usually it end up being that the first function has some sort of array
+that is added to by the second function, and then returned at the end
+as the final answer.
+
+function solveP(int input){
+    ArrayList<Integer> results = new ArrayList<>();
+    do_some_work(results, someStartVal);
+    return results;
+}
+
+function do_some_work(ArrayList<Integer> input, int val){
+    do stuff here
+}
+
+
+pure recursion is just purely a function calling its self and
+eventually returning the right answer
+
+like CS_11_2
 

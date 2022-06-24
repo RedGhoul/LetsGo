@@ -10,6 +10,11 @@ public class SG_33_Bubble_Sort {
         System.out.println(Arrays.toString(sort(new int[]{1,-2})));
     }
 
+    /**
+     * If I am greater than you, make the switch.
+     * And do that for every index of the array.
+     * Time complexity: Double For Loop so O(n^2)
+     * **/
     public static int[] sort(int[] input){
         if(input.length == 0) return input;
         for(int i =0; i < input.length;i++){

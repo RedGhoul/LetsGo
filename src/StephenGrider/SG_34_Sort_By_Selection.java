@@ -11,7 +11,12 @@ public class SG_34_Sort_By_Selection {
         System.out.println(Arrays.toString(sort(new int[]{1,-2})));
         System.out.println(Arrays.toString(sort(new int[]{1})));
     }
-    /***/
+    /**
+     * I am going to assume that my current value is the smallest
+     * Then I am going to go through the rest of the array to see
+     * If I am wrong, at the end I will make the switch
+     * Time complexity: Double For Loop so O(n^2)
+     * **/
     public static int[] sort(int[] input){
         if(input.length == 0) return input;
         for(int i =0; i < input.length; i++){

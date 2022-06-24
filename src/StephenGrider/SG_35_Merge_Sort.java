@@ -20,6 +20,31 @@ public class SG_35_Merge_Sort {
         return split(input);
     }
 
+    /**
+     * Two parts:
+     * A cutter
+     * A joiner
+     *
+     * Cutter keeps cutting the array in half
+     * Joiner takes two arrays, and just joins them
+     * from smallest to biggest
+     *
+     * You keep recursively cutting arrays till, you only have two numbers.
+     * Then it is really simple to put the smallest before the
+     * largest in the array
+     *
+     * So the cutter lives in the joiner, to a point where the recursive
+     * calls keep returning half's of the array, in sorted form.
+     *
+     * Recursive Type Algo
+     *
+     * Log(n) <- since we are cutting stuff in half
+     * n <- because we are cutting the array in half
+     * for every element in the array
+     *
+     * Time complexity is O(n*log(n))
+     *
+     * **/
     public static List<Integer> split(List<Integer> input){
         if(input.size() <= 1) return input;
         List<Integer> input1 = new ArrayList<>();

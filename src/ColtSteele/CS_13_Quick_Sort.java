@@ -22,6 +22,18 @@ public class CS_13_Quick_Sort {
      * 1st function is the initial helper function to create the recursion
      * 2nd function is a utility found that does the pivoting and modification of the array
      * (make sure you are going from the GIVEN start to the GIVEN end)
+     *
+     * Time Complexity: O(n^2)
+     * Since worst case we have to sort something that is already sorted.
+     * So we pick a value as our pivot, and more everything bigger to right
+     * and everything smaller to the left.
+     * If the value we pick is already in the right place. We essentially just take the
+     * pivot and compare it to everything else in the array, every time.
+     * Another way to think about it:
+     * So we pick a number - first for loop
+     * Compare it to everything else - second for loop
+     *
+     * Diagram it out
      * **/
 
 

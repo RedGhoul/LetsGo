@@ -80,3 +80,11 @@ eventually returning the right answer
 
 like CS_11_2
 
+Big O (Worse Case) of Linked List & Doubly Linked List is:
+Insertion is O(1)
+Search / Access / Remove is O(n) - finding the second last thing
+
+Big O of Stack & Queues:
+Insertion is O(1)
+Search is O(n)
+

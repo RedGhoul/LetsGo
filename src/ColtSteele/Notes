@@ -88,3 +88,30 @@ Big O of Stack & Queues:
 Insertion is O(1)
 Search is O(n)
 
+O(log(n)) and O(1) pretty much the same thing
+Best you can do
+Priority QQ
+all worst cases
+Get max -> O(1)
+Remove max -> O(log(n)) - you are re-balancing
+that involves reducing your problem space by half each time
+Insert value -> O(log(n)) - you are re-balancing
+that involves reducing your problem space by half each time
+16 elements in the list means 4 compares
+log(16) base 2 is 4
+every time you double nodes, you increase compares by 1
+Search -> O(n) - just looking through the list of nodes
+Heaps can never look like a long line, cause you force them to take
+left and right children and then keep adding below
+
+Hash Tables:
+- Basically a key value store
+- backed by an array that doubles every time you run out of space
+1) you hash your key, and use that as an index into your array
+2) if you have a hash collision you use a linked list to add depth to the
+entry
+- Keep things here is that you need to make sure your hashing function
+is really good such that it doesn't take too long to run.
+and that it does it well enough that you don't get that many collisions
+
+Graphs:

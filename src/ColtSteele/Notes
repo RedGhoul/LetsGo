@@ -115,6 +115,8 @@ is really good such that it doesn't take too long to run.
 and that it does it well enough that you don't get that many collisions
 
 Graphs:
+vertex = node
+line between nodes = edge
 You can store a graph structure in two ways:
 Adjacency List: - HashMap
 Keys are vertexes, values are all the things the vertex is connected to
@@ -136,4 +138,8 @@ Super fast to check if there is connection
 Slow to go over all edges
 Make sense to use if you have a ton of interconnected nodes
 
+Graphs Traversal - VERY IMPORTANT
+DFS - Stack - List (Keep putting children first)
+BFS - Queue - List (Keep putting stuff inorder at the back end)
+Need to have a memory of where you have already been so you don't repeat yourself
 

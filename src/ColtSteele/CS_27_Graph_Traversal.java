@@ -16,6 +16,27 @@ public class CS_27_Graph_Traversal {
 
         System.out.println(gg.DFSRecursive("A"));
         System.out.println(gg.DFSInter("A"));
+        System.out.println(gg.BFS("A"));
+    }
+
+    public String BFS(String vertex){
+        if(!adjacencyList.containsKey(vertex)) return "";
+        Queue<String> qq = new LinkedList<>();
+        qq.add(vertex);
+        Set<String> seen = new HashSet<>();
+        List<String> visited = new ArrayList<>();
+        while (!qq.isEmpty()){
+            String curVertex = qq.remove();
+            if(!seen.contains(curVertex)){
+                visited.add(curVertex);
+                seen.add(curVertex);
+                for(String child: adjacencyList.get(curVertex)){
+                    qq.add(child);
+                }
+            }
+        }
+
+        return String.join(",", visited);
     }
 
     public String DFSInter(String vertex){

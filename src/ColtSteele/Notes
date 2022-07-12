@@ -139,7 +139,9 @@ Slow to go over all edges
 Make sense to use if you have a ton of interconnected nodes
 
 Graphs Traversal - VERY IMPORTANT
-DFS - Stack - List (Keep putting children first)
+DFS - Stack - List (Keep putting children first) (use stack to do it iteratively
+Recursively - use a set (visited), loop through all children and call yourself only on those
+vertex that are not in the visited set
 BFS - Queue - List (Keep putting stuff inorder at the back end)
 Need to have a memory of where you have already been so you don't repeat yourself
 

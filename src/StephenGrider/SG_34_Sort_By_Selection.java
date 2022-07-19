@@ -15,7 +15,9 @@ public class SG_34_Sort_By_Selection {
      * I am going to assume that my current value is the smallest
      * Then I am going to go through the rest of the array to see
      * If I am wrong, at the end I will make the switch
-     * Time complexity: Double For Loop so O(n^2)
+     * Time complexity: Double For Loop so O(n^2) -
+     * you are comparing an element to every
+     * other element every time
      * **/
     public static int[] sort(int[] input){
         if(input.length == 0) return input;

@@ -2,7 +2,7 @@ package JosePortilla;
 
 import java.util.Locale;
 
-public class JP_Arrays_1_Anagram_Check_Only_Arrays {
+public class JP_Array_1_Anagram_Check_Only_Arrays {
 
     public static void main(String[] args){
         System.out.println(isAnagram("public relations","crap built on lies"));
